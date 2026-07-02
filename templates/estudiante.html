@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">                          
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiante</title>
+</head>
+<body>
+    <h1>Formulario Estudiante</h1>
+    
+    <form action="/procesar_estudiante" method="post">
+        <p>
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required placeholder="Ej. Juan">
+        </p>
+        <p>
+            <label>Apellido:</label>
+            <input type="text" name="apellido" required placeholder="Ej. Pérez">
+        </p>
+        <p>
+            <label>Edad:</label>
+            <input type="number" name="edad" required placeholder="Ej. 20">
+        </p>
+        
+        <p>Ingresa nota 1 </p>
+        <input type="number" name="nota1" required placeholder="Ej. 8.5">
+        <p>Ingresa nota 2 </p>
+        <input type="number" name="nota2" required placeholder="Ej. 9.0">
+        <p>Ingresa nota 3 </p>
+        <input type="number" name="nota3" required placeholder="Ej. 7.5">
+        <button type="submit">Enviar y Calcular Promedio</button>
+    </form>
+
+    <br>
+    <a href="/">← Regresar al Menú Principal</a>
+</body>
+</html>

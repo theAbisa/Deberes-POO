@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">                          
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehículos</title>
+</head>
+<body>
+    <h1>Venta de Vehiculos</h1>
+    
+    <form action="/ventaVehiculos" method="post"
+        <p>
+            <label>Nombre comprador:</label>
+            <input type="text" name="nombre" required placeholder="Ej. Juan Pérez">
+        </p>
+        <p>
+            <label>Marca:</label>
+            <input type="text" name="marca" required placeholder="Ej. Toyota">
+        </p>
+        <p>
+            <label>Precio:</label>
+            <input type="number" name="precio" step="any" required placeholder="Ej. 20000">
+        </p>
+        <p>
+            <label>Cantidad:</label>
+            <input type="number" name="cantidad" step="any" required placeholder="Ej. 2">
+        </p>
+        <p>
+            <label for="metodoPago">Metodo de Pago:</label>
+            <select name="metodoPago" required>
+                <option value="">Seleccione un método de pago</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta de Crédito</option>
+                <option value="credito">Crédito</option>
+            </select>
+        </p>
+        <button type="submit">Enviar y Calcular</button>
+    </form>
+
+    <br>
+    <a href="/">← Regresar al Menú Principal</a>
+</body>
+</html>
