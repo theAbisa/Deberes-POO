@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">                          
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Producto</title>
+</head>
+<body>
+    <h1>Venta producto</h1>
+    
+    <form action="/procesarProducto" method="post">
+        <p>
+            <label>Nombre del Prodcuto</label>
+            <input type="text" name="nombreProducto" required placeholder="Ej. Juan">
+        </p>
+        <p>
+            <label>Precio del producto:</label>
+            <input type="number" name="precioProducto" required placeholder="Ej. 100.50">
+        </p>
+        <p>
+            <label>Cantidad:</label>
+            <input type="number" name="cantidadProducto" required placeholder="Ej. 20">
+        </p>
+        <button type="submit">Enviar y Calcular Promedio</button>
+    </form>
+    <br>
+    <a href="/">← Regresar al Menú Principal</a>
+</body>
